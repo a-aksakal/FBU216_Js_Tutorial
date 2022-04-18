@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./products.js"></script>
+  </head>
+  <body>
+    <input type="text" id="findProduct" />
+    <button onclick="IsInclude()">Doğrula!</button>
+    <button onclick="ProductIsInclude()">İndex Bul!</button>
+    <script>
+      var products2 = ["Elma", "Armut", "Soğan"];
+      function IsInclude() {
+        var productName2 = document.getElementById("findProduct").value;
+        //boolean değer döndürerek değerin dizinin içinde olup olmadığını kontrol eder.
+        var varmi = products2.includes(productName2);
+        alert(varmi);
+      }
+
+      function ProductIsInclude() {
+        var productName2 = document.getElementById("findProduct").value;
+        var varmi = products.productName.includes(productName2);
+        alert(varmi);
+      }
+
+      function FindIndex() {
+        var productName2 = document.getElementById("findProduct").value;
+        //Dizideki indexi bulmak için kullanılan method.
+        var index = products2.indexOf(productName2);
+        alert(index);
+      }
+    </script>
+  </body>
+</html>
